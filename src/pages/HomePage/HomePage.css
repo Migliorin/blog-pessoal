@@ -1,7 +1,14 @@
 .page{
     padding-top: 30px;
     padding-bottom: 50px;
-
+    display: flex;
+    
 }
 
+.container-publicacoes{
+    width:700px ;
+}
 
+.container-perfil{
+    width: 250px;
+}

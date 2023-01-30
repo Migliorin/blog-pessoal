@@ -1,59 +1,25 @@
-import { Container } from "react-bootstrap";
 import Perfil from "../../components/Perfil/Perfil";
 import Publicacoes from "../../components/Publicacoes/Publicacoes";
-import './HomePage.css'
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
+import './HomePage.css';
 
 function HomePage() {
     return (
         <div className="page">
-            
-            <Container>
-            <Row>
-                <Col>
-                    <Row>
-                        <Perfil/>
-                    </Row>
-                </Col>
-                <Col>
-                    <Row>
-                        <Publicacoes/>
-                    </Row>
-                    <Row>
-                        <Publicacoes/>
-                    </Row>
-                    <Row>
-                        <Publicacoes/>
-                    </Row>
-                    <Row>
-                        <Publicacoes/>
-                    </Row>
-                    <Row>
-                        <Publicacoes/>
-                    </Row>
-                    <Row>
-                        <Publicacoes/>
-                    </Row>
-                    <Row>
-                        <Publicacoes/>
-                    </Row>
-                    <Row>
-                        <Publicacoes/>
-                    </Row>
-                    <Row>
-                        <Publicacoes/>
-                    </Row>
-                    <Row>
-                        <Publicacoes/>
-                    </Row>
-                </Col>
-            </Row>
-            </Container>
-            
-            
-            
+
+            <div className="container-perfil">
+                <Perfil />
+            </div>
+            <div className="container-publicacoes">
+                <Publicacoes />
+                <Publicacoes />
+                <Publicacoes />
+                <Publicacoes />
+                <Publicacoes />
+                <Publicacoes />
+                <Publicacoes />
+                <Publicacoes />
+                <Publicacoes />
+            </div >
         </div>
 
     );

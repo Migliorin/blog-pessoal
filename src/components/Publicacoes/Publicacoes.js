@@ -1,20 +1,24 @@
 import './Publicacoes.css'
+import imgEle from "../../imgs/eletronica.jpeg"
+import { Container } from 'react-bootstrap';
 
-import Card from 'react-bootstrap/Card';
+function ImgOverlayExample() {
+  return (
+    <Container>
+      <div className='publicacao-container'>
+          <img src={imgEle} className='img-publicacao'></img>
+        <h3>Titulo do card</h3>
+        <div className='data-publicacao'>
+          <p>jan 30, 2023 | <a>Link</a></p>
+        </div>
+        <p className='sumario'>Donec id velit quis orci egestas tincidunt. Proin convallis diam sit amet 
+        ante sagittis tristique. Praesent vitae tristique felis. Pellentesque rutrum ex non porttitor auctor.
+        Nunc in lorem pretium, fermentum enim id, viverra metus. Vivamus eget sem quis tortor cursus pretium 
+        sed et mauris. <a href='' className='read_more'>Read more...</a></p>
+        
+      </div>
+    </Container>
+  );
+}
 
-export default function Publicacoes(){
-    return (
-
-
-    <Card className="bg-dark text-white publicacoes">
-    <Card.ImgOverlay>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in
-        to additional content. This content is a little bit longer.
-      </Card.Text>
-      <Card.Text>Last updated 3 mins ago</Card.Text>
-    </Card.ImgOverlay>
-  </Card>
-    );
-};
+export default ImgOverlayExample;
