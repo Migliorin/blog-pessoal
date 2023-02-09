@@ -1,3 +1,4 @@
+import Paginacao from "../../components/Paginacao/Paginacao";
 import Perfil from "../../components/Perfil/Perfil";
 import Publicacoes from "../../components/Publicacoes/Publicacoes";
 import './HomePage.css';
@@ -13,12 +14,7 @@ function HomePage() {
                 <Publicacoes />
                 <Publicacoes />
                 <Publicacoes />
-                <Publicacoes />
-                <Publicacoes />
-                <Publicacoes />
-                <Publicacoes />
-                <Publicacoes />
-                <Publicacoes />
+                <Paginacao/>
             </div >
         </div>
 
